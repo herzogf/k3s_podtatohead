@@ -14,3 +14,7 @@ podtato-head:
         paths: 
           - path: /
             pathType: ImplementationSpecific
+  hat:
+    env: []
+      - name: PODTATO_PART_NUMBER
+       value: "03"
