@@ -1,0 +1,11 @@
+# applies to all deployments in this chart
+replicaCount: 1
+entry:
+  serviceType: ClusterIP
+
+# applies to podtato-head-entry deployment only
+ingress:
+  enabled: true
+  className: "traefik"
+  hosts:
+    - host: podtatohead-dev.k3s.fritz.box
