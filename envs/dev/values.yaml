@@ -11,3 +11,6 @@ podtato-head:
     className: "traefik"
     hosts:
       - host: podtatohead-dev.k3s.fritz.box
+        paths: 
+          - path: /
+            pathType: ImplementationSpecific
