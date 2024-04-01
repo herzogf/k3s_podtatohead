@@ -1,7 +1,7 @@
 podtato-head:
   fullnameOverride: podtatohead
   # applies to all deployments in this chart
-  replicaCount: 1
+  replicaCount: 0
   entry:
     serviceType: ClusterIP
 
