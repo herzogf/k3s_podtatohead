@@ -8,9 +8,12 @@ podtato-head:
   # applies to podtato-head-entry deployment only
   ingress:
     enabled: true
-    className: "traefik"
+    #className: "traefik"
+    className: "nginx"
     hosts:
-      - host: podtatohead-prod.k3s.fritz.box
+      #- host: podtatohead-prod.k3s.fritz.box
+      - host: podtatohead-prod.k8s.abalulu.de
         paths: 
           - path: /
-            pathType: ImplementationSpecific
+            #pathType: ImplementationSpecific
+            pathType: Prefix
