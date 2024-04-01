@@ -9,12 +9,14 @@ podtato-head:
   ingress:
     enabled: true
     #className: "traefik"
+    className: "nginx"
     hosts:
       #- host: podtatohead-dev.k3s.fritz.box
       - host: podtatohead-dev.k8s.abalulu.de
         paths: 
           - path: /
-            pathType: ImplementationSpecific
+            #pathType: ImplementationSpecific
+            pathType: Prefix
   hat:
     env:
       - name: PODTATO_PART_NUMBER
