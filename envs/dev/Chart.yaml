@@ -1,9 +1,9 @@
 apiVersion: v2
 name: podtato-head-dev
 description: Deploys the podtato-head app
-version: 0.2.7
-appVersion: 0.2.7
+version: 0.2.8
+appVersion: 0.2.8
 dependencies:
 - name: podtato-head
-  version: "0.2.7"
+  version: "0.2.8"
   repository: "file://../../chart"
